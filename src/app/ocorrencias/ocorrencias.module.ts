@@ -1,5 +1,7 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
+import { MatSortModule } from '@angular/material/sort';
 
 import { OcorrenciasRoutingModule } from './ocorrencias-routing.module';
 import { OcorrenciasComponent } from './ocorrencias/ocorrencias.component';
@@ -11,7 +13,9 @@ import { OcorrenciasComponent } from './ocorrencias/ocorrencias.component';
   ],
   imports: [
     CommonModule,
-    OcorrenciasRoutingModule
+    OcorrenciasRoutingModule,
+    MatSortModule,
+    MatCardModule
   ]
 })
 export class OcorrenciasModule { }
